@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shivang Dubey | Cybersecurity &amp; AI</title>
+<meta name="description" content="Portfolio of Shivang Dubey: B.Tech CSE (AI/ML) student focused on penetration testing, network security and AI for cyber defence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b10;--bg2:#0d141c;--card:#0f1923;--line:#1d2b38;--tx:#d6dee6;--mut:#8696a5;--g:#00ff9c;--c:#00e5ff;--m:#ff2e63;--glow:0 0 24px rgba(0,255,156,.25);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f7f9;--bg2:#e8eef2;--card:#fff;--line:#d3dde5;--tx:#16222d;--mut:#51616f;--g:#008f59;--c:#00798f;--m:#d6194d;--glow:0 0 24px rgba(0,143,89,.15)}}
+:root[data-theme="light"]{--bg:#f4f7f9;--bg2:#e8eef2;--card:#fff;--line:#d3dde5;--tx:#16222d;--mut:#51616f;--g:#008f59;--c:#00798f;--m:#d6194d;--glow:0 0 24px rgba(0,143,89,.15)}
+:root[data-theme="dark"]{--bg:#070b10;--bg2:#0d141c;--card:#0f1923;--line:#1d2b38;--tx:#d6dee6;--mut:#8696a5;--g:#00ff9c;--c:#00e5ff;--m:#ff2e63}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden}
+.mono{font-family:'JetBrains Mono',Consolas,monospace}
+#bg{position:fixed;inset:0;z-index:-1;opacity:.5;background:radial-gradient(600px 400px at 85% 10%,rgba(0,229,255,.12),transparent),radial-gradient(500px 400px at 5% 40%,rgba(0,255,156,.1),transparent),linear-gradient(var(--line) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/48px 48px;-webkit-mask-image:linear-gradient(#000 40%,transparent);mask-image:linear-gradient(#000 40%,transparent)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav b{color:var(--g);font-size:15px}nav div{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+nav a{color:var(--mut);text-decoration:none;font-size:14px;transition:.2s}nav a:hover{color:var(--g)}
+nav button{background:none;border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:4px 10px;cursor:pointer}
+section{max-width:1040px;margin:0 auto;padding:84px 5vw 10px}
+h2{font:800 28px 'JetBrains Mono',monospace;margin:0 0 28px}h2:before{content:'> ';color:var(--g)}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;padding-top:40px}
+.tag{display:inline-block;border:1px solid var(--g);color:var(--g);border-radius:99px;padding:4px 14px;font-size:13px;box-shadow:var(--glow);width:max-content}
+h1{font:800 clamp(38px,8vw,76px)/1.05 'JetBrains Mono',monospace;margin:20px 0 10px;letter-spacing:-2px}
+h1 span{background:linear-gradient(90deg,var(--g),var(--c),var(--m));-webkit-background-clip:text;background-clip:text;color:transparent}
+.type{font-size:clamp(16px,3vw,22px);color:var(--c);min-height:1.6em}.type:after{content:'▌';color:var(--g);animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}
+.lead{max-width:620px;color:var(--mut);margin:18px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 22px;border-radius:10px;text-decoration:none;font:600 14px 'JetBrains Mono',monospace;border:1px solid var(--g);color:var(--g);transition:.25s}
+.btn.f{background:var(--g);color:#04110b}.btn:hover{transform:translateY(-3px);box-shadow:var(--glow)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:44px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}.stat b{display:block;font:800 22px 'JetBrains Mono',monospace;color:var(--g)}.stat span{font-size:13px;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:.3s}.card:hover{border-color:var(--g);transform:translateY(-4px);box-shadow:var(--glow)}
+.card h3{margin:0 0 8px;font:700 17px 'JetBrains Mono',monospace}.card p{margin:0;color:var(--mut);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.chip{font:12px 'JetBrains Mono',monospace;padding:4px 10px;border-radius:6px;background:var(--bg2);border:1px solid var(--line);color:var(--c)}
+.feat{border-color:var(--g);background:linear-gradient(135deg,var(--card),var(--bg2));margin-bottom:18px;box-shadow:var(--glow)}
+.feat .badge{color:var(--m);font:600 12px 'JetBrains Mono',monospace;letter-spacing:1px}
+.feat h3{font-size:24px;margin:8px 0}.feat ul{color:var(--mut);padding-left:20px;margin:14px 0 0}.feat li{margin:5px 0}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0;font:12px 'JetBrains Mono',monospace}.flow i{font-style:normal;color:var(--mut)}
+.flow span{border:1px solid var(--c);color:var(--c);padding:5px 10px;border-radius:6px}
+.tl{border-left:2px solid var(--line);padding-left:24px;margin-left:6px}.tl .card{margin-bottom:18px;position:relative}.tl .card:before{content:'';position:absolute;left:-33px;top:26px;width:12px;height:12px;border-radius:50%;background:var(--g);box-shadow:var(--glow)}
+.meta{font:12px 'JetBrains Mono',monospace;color:var(--m);margin-bottom:6px}
+.term{background:#04080c;color:#c8d3dd;border:1px solid var(--line);border-radius:12px;padding:18px;font:14px/1.8 'JetBrains Mono',monospace;overflow-x:auto}.term b{color:#00ff9c}.term em{color:#00e5ff;font-style:normal}
+a.link{color:var(--c)}
+footer{text-align:center;color:var(--mut);padding:70px 5vw calc(40px + env(safe-area-inset-bottom,0px));font-size:13px}
+.rv{opacity:0;transform:translateY(24px);transition:.7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bg"></div>
+<nav class="mono"><b>shivang@sec:~$</b><div><a href="#about">about</a><a href="#work">work</a><a href="#projects">projects</a><a href="#skills">skills</a><a href="#certs">certs</a><a href="#contact">contact</a><button id="th" aria-label="Toggle theme">◐</button></div></nav>
+
+<section class="hero">
+<span class="tag mono">● ONLINE · learning in public</span>
+<h1>Shivang<br><span>Dubey.</span></h1>
+<div class="type mono" id="ty"></div>
+<p class="lead">B.Tech CSE (AI/ML) student at ABES Institute of Technology. I build full-stack apps and AI-driven security tools, and I'm training for a career in penetration testing and security analysis.</p>
+<div class="btns"><a class="btn f" href="#projects">View projects</a><a class="btn" href="mailto:shivangdubey049@gmail.com">Get in touch</a><a class="btn" href="https://github.com/Shivangdubey049" target="_blank" rel="noopener">GitHub ↗</a></div>
+<div class="stats"><div class="stat"><b>5</b><span>Projects built</span></div><div class="stat"><b>2025</b><span>Full-stack intern, BlueStock</span></div><div class="stat"><b>6</b><span>Certifications</span></div><div class="stat"><b>2028</b><span>B.Tech graduation</span></div></div>
+</section>
+
+<section id="about" class="rv">
+<h2>about</h2>
+<div class="term"><b>$</b> cat about.txt<br>
+<em>role</em>      B.Tech CSE (AI/ML), 1st year<br>
+<em>base</em>      Ghaziabad, Uttar Pradesh, India<br>
+<em>focus</em>     penetration testing · network security · security analysis<br>
+<em>building</em>  AI-based attack forecasting (OracleShield)<br>
+<em>background</em> full-stack dev (Django, React, Next.js), ex-intern<br>
+<em>leadership</em> former Head Boy, SRGMSSS Agra<br>
+<em>ethics</em>    authorised targets only. labs, CTFs and own systems.</div>
+</section>
+
+<section id="work" class="rv">
+<h2>experience</h2>
+<div class="tl">
+<div class="card"><div class="meta">JUN 2025 – AUG 2025</div><h3>Software Engineer Intern · BlueStock Fintech</h3>
+<p>Full-stack internship building web applications and UI/UX. Worked with REST APIs for frontend and backend data exchange, Django for backend development, PostgreSQL for data warehousing and analytics, Figma for design, and Git branching in a team.</p>
+<div class="chips"><span class="chip">Django</span><span class="chip">REST APIs</span><span class="chip">PostgreSQL</span><span class="chip">Figma</span><span class="chip">Git</span></div></div>
+<div class="card"><div class="meta">2021 – 2023</div><h3>Head Boy · SRGMSSS, Agra</h3>
+<p>Promoted from Deputy Head Boy to Head Boy for leadership. Managed institutional visits by dignitaries, represented students in discussions on the school's future, and led extramural competitions.</p></div>
+</div>
+</section>
+
+<section id="projects" class="rv">
+<h2>projects</h2>
+<p class="lead" style="margin-top:-12px">Five things I have built so far, from AI security research to full-stack web apps.</p>
+<div class="card feat">
+<div class="badge">★ FEATURED PROJECT</div>
+<h3>OracleShield</h3>
+<p>An AI network-security prototype that forecasts where an attack will move next. Most intrusion detection asks what attack is happening now; OracleShield uses an LSTM world model over evolving network states to look ahead.</p>
+<div class="flow"><span>Traffic</span><i>→</i><span>State S_t</span><i>→</i><span>RandomForest + LSTM</span><i>→</i><span>Forward rollout</span><i>→</i><span>MITRE ATT&amp;CK stage</span><i>→</i><span>SHA-256 audit chain</span></div>
+<ul><li>Predicts the next network state and attack-stage distribution</li><li>Persistent threat memory for recurring attacker trajectories</li><li>Tamper-evident hash-chained audit ledger with a live tamper demo</li><li>Trained on NSL-KDD (148,517 records) and reported with macro precision, recall and F1</li></ul>
+<div class="chips"><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">scikit-learn</span><span class="chip">Streamlit</span><span class="chip">MITRE ATT&amp;CK</span></div>
+<div class="btns" style="margin-top:18px"><a class="btn" href="https://github.com/Shivangdubey049/OracleShield" target="_blank" rel="noopener">View source ↗</a></div>
+</div>
+<div class="grid">
+<div class="card"><h3>autoattendify</h3><p>Next.js and TypeScript web app built for Smart India Hackathon 2025 and deployed on Vercel.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Vercel</span></div><div class="btns" style="margin-top:16px"><a class="btn" href="https://autoattendifyy.vercel.app" target="_blank" rel="noopener">Live ↗</a><a class="btn" href="https://github.com/Shivangdubey049/autoattendify" target="_blank" rel="noopener">Code ↗</a></div></div>
+<div class="card"><h3>carbon-wise-commute</h3><p>React and TypeScript app with a Supabase backend that helps people choose greener commuting options.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Supabase</span></div><div class="btns" style="margin-top:16px"><a class="btn" href="https://github.com/Shivangdubey049/carbon-wise-commute" target="_blank" rel="noopener">Code ↗</a></div></div>
+<div class="card"><h3>C Language Notes</h3><p>A structured set of C programming concepts with practice questions and important university questions for B.Tech students.</p><div class="chips"><span class="chip">C</span><span class="chip">DSA basics</span><span class="chip">Study notes</span></div><div class="btns" style="margin-top:16px"><span class="chip">private repo</span></div></div>
+<div class="card"><h3>Curivo Healthcare</h3><p>Mental-health website with a relaxation music player, movie suggestions, forums, meditation and yoga resources, and an AI chatbot trained on site data with an LLM fallback.</p><div class="chips"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Firebase</span></div><div class="btns" style="margin-top:16px"><a class="btn" href="https://github.com/Shivangdubey049/curivo" target="_blank" rel="noopener">Code ↗</a></div></div>
+</div>
+</section>
+
+<section id="skills" class="rv">
+<h2>skills</h2>
+<div class="grid">
+<div class="card"><h3>Security</h3><div class="chips"><span class="chip">Pentesting (learning)</span><span class="chip">Network analysis</span><span class="chip">MITRE ATT&amp;CK</span><span class="chip">Linux</span><span class="chip">Nmap</span><span class="chip">Wireshark</span><span class="chip">Burp Suite</span></div></div>
+<div class="card"><h3>Languages</h3><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">C</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">SQL</span><span class="chip">HTML/CSS</span></div></div>
+<div class="card"><h3>Web &amp; AI</h3><div class="chips"><span class="chip">Django</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Angular</span><span class="chip">PyTorch</span><span class="chip">PostgreSQL</span><span class="chip">Supabase</span></div></div>
+<div class="card"><h3>Tools</h3><div class="chips"><span class="chip">Git/GitHub</span><span class="chip">VS Code</span><span class="chip">Eclipse</span><span class="chip">Android Studio</span><span class="chip">Figma</span></div></div>
+</div>
+<h2 style="margin-top:56px">education</h2>
+<div class="card"><div class="meta">SEP 2024 – SEP 2028</div><h3>B.Tech CSE (AI/ML) · ABES Institute of Technology</h3><p>Ghaziabad, UP. Coursework: Data Structures, Cybersecurity, Artificial Intelligence, Neural Networks, Cloud Computing, Database Systems, App Development.</p></div>
+</section>
+
+<section id="certs" class="rv">
+<h2>certifications</h2>
+<div class="grid">
+<div class="card" style="border-color:var(--g);box-shadow:var(--glow)"><div class="meta">JUN 2025</div><h3>Deloitte Australia · Cyber Job Simulation</h3><p><b>Forage</b> · Virtual job simulation in cyber security.</p><div class="chips"><span class="chip">Cyber Security</span><span class="chip">Job Simulation</span></div></div>
+<div class="card"><div class="meta">SEP 2025</div><h3>J.P. Morgan · Quantitative Research Job Simulation</h3><p><b>Forage</b> · Virtual quant research simulation covering algorithms and credit analysis.</p><div class="chips"><span class="chip">Algorithm Development</span><span class="chip">Credit Analysis</span></div></div>
+<div class="card"><div class="meta">DEC 2025</div><h3>Computer Architecture (GPUs and CPUs)</h3><p><b>Saylor University</b> · How CPUs and GPUs are designed and how they work.</p><div class="chips"><span class="chip">Computer Architecture</span><span class="chip">GPU</span></div></div>
+<div class="card"><div class="meta">NOV 2025</div><h3>NPTEL · Game Development &amp; AR</h3><p><b>IIT Mandi</b> · NPTEL course on game development and augmented reality.</p><div class="chips"><span class="chip">Game Development</span><span class="chip">AR</span></div></div>
+<div class="card"><div class="meta">NOV 2025</div><h3>Programming Fundamentals Using Python</h3><p><b>Infosys Springboard</b> · Core Python programming and problem solving.</p><div class="chips"><span class="chip">Python</span><span class="chip">Problem Solving</span></div></div>
+<div class="card"><div class="meta">AUG 2025</div><h3>Google Developer Groups on Campus</h3><p><b>Hack2skill</b> · GDG on Campus programme certificate.</p><div class="chips"><span class="chip">Google Developer Groups</span><span class="chip">Community</span></div></div>
+</div>
+</section>
+
+<section id="contact" class="rv">
+<h2>contact</h2>
+<div class="card"><h3>Let's talk security, AI or a hackathon.</h3><p>Open to CTF teammates, study partners, internships and collaborations.</p>
+<div class="btns" style="margin-top:18px"><a class="btn f" href="mailto:shivangdubey049@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/shivangdubey049" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn" href="https://github.com/Shivangdubey049" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="https://x.com/Shivangdubey049" target="_blank" rel="noopener">X ↗</a></div></div>
+</section>
+
+<footer class="mono">© 2026 Shivang Dubey · ethical hacking only · stay curious, stay ethical</footer>
+
+<script>
+(function(){
+var L=["whoami → Shivang Dubey","cybersecurity enthusiast","aspiring penetration tester","AI for cyber defence builder","OracleShield builder"],i=0,j=0,d=false,el=document.getElementById('ty');
+function tick(){var w=L[i];el.textContent=w.slice(0,j);if(!d&&j<w.length){j++;setTimeout(tick,70)}else if(!d){d=true;setTimeout(tick,1400)}else if(j>0){j--;setTimeout(tick,35)}else{d=false;i=(i+1)%L.length;setTimeout(tick,300)}}
+tick();
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.08});
+document.querySelectorAll('.rv').forEach(function(n){io.observe(n)});
+var r=document.documentElement,b=document.getElementById('th');
+b.onclick=function(){var dark=getComputedStyle(r).getPropertyValue('--bg').trim()==='#070b10';r.setAttribute('data-theme',dark?'light':'dark')};
+})();
+</script>
+</body>
+</html>
